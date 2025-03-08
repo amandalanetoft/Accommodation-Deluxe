@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fafafa;
+  min-height: 100%!important;
+}
+
+
+
+
+/* Ensure that html and body take up the full height */
+html, body {
+  height: 100%;
+}
+
+/* Flexbox layout for the app-wrapper */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it takes up the full viewport height */
+}
+
+/* Make the content grow to fill the available space */
+.app-wrapper > div {
+  flex: 1; /* This makes the content area grow */
+}
+
+/* Footer styling */
+footer {
+  padding: 20px;
+}
+
+
